@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto empresa</title>
-    <link rel="stylesheet" href="contacto-style.css" />
+    <link rel="stylesheet" href="css/contacto-style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,6 +14,37 @@
     />
   </head>
   <body class="justify-content-center align-items-center">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Te lo Vendo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html" href="#">Home</a>
+              <a class="nav-link" href="#">Inicio</a>
+              <a class="nav-link" href="#">Acerca de</a>
+              <a
+                class="nav-link active"
+                href="/contacto.html"
+                aria-current="page"
+                >Contacto</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
       <section>
         <div class="card col-sm-4">
@@ -35,20 +66,33 @@
               </div>
               <div class="form-floating">
                 <input
-                type="email"
-                id="email"
-                name="email"
-                class="form-control"
-                placeholder="name@example.com"
-                required
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="name@example.com"
+                  required
                 />
                 <label for="email">Email:</label>
               </div>
               <div class="form-floating">
-                <textarea name="mensaje" id="mensaje" class="form-control" minlength="10" maxlength="200" required></textarea>
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  class="form-control"
+                  minlength="10"
+                  maxlength="200"
+                  required
+                ></textarea>
                 <label for="mensaje">Ingrese su mensaje:</label>
               </div>
-              <input id="btn-enviar" class="btn btn-primary" type="submit" value="Enviar" onclick="validarFormulario()" />
+              <input
+                id="btn-enviar"
+                class="btn btn-primary"
+                type="submit"
+                value="Enviar"
+                onclick="validarFormulario()"
+              />
             </form>
           </div>
         </div>
