@@ -46,56 +46,60 @@
       </nav>
     </header>
     <main>
-      <section>
-        <div class="card col-sm-4">
-          <div class="card-header">
-            <h1>Formulario de contacto</h1>
+      <section class="container">
+        <article class="row">
+          <div class="col">
+            <div class="card mt-5">
+              <div class="card-header">
+                <h1>Formulario de contacto</h1>
+              </div>
+              <div class="card-body col-auto">
+                <form action="" id="formulario">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      name="nombre"
+                      id="nombre"
+                      class="form-control"
+                      placeholder=" Juan Barra"
+                      required
+                    />
+                    <label for="nombre">Nombre:</label>
+                  </div>
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="name@example.com"
+                      required
+                    />
+                    <label for="email">Email:</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea
+                      name="mensaje"
+                      id="mensaje"
+                      class="form-control"
+                      minlength="10"
+                      maxlength="200"
+                      required
+                    ></textarea>
+                    <label for="mensaje">Ingrese su mensaje:</label>
+                  </div>
+                  <input
+                    id="btn-enviar"
+                    class="btn btn-primary"
+                    type="submit"
+                    value="Enviar"
+                    onclick="validarFormulario()"
+                  />
+                </form>
+              </div>
+            </div>
           </div>
-          <div class="card-body col-auto">
-            <form action="" id="formulario">
-              <div class="form-floating">
-                <input
-                  type="text"
-                  name="nombre"
-                  id="nombre"
-                  class="form-control"
-                  placeholder=" Juan Barra"
-                  required
-                />
-                <label for="nombre">Nombre:</label>
-              </div>
-              <div class="form-floating">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="form-control"
-                  placeholder="name@example.com"
-                  required
-                />
-                <label for="email">Email:</label>
-              </div>
-              <div class="form-floating">
-                <textarea
-                  name="mensaje"
-                  id="mensaje"
-                  class="form-control"
-                  minlength="10"
-                  maxlength="200"
-                  required
-                ></textarea>
-                <label for="mensaje">Ingrese su mensaje:</label>
-              </div>
-              <input
-                id="btn-enviar"
-                class="btn btn-primary"
-                type="submit"
-                value="Enviar"
-                onclick="validarFormulario()"
-              />
-            </form>
-          </div>
-        </div>
+        </article>
       </section>
     </main>
     <footer></footer>
